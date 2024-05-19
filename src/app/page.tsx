@@ -1,7 +1,6 @@
 import { MenuItems } from "./componentes/MenuItems";
+import { CategBar } from "./componentes/categBar";
 import { Footerson } from "./componentes/footer";
-import { SlideProducts } from "./componentes/produtosSlide/slideProducts";
-import { SideCateg } from "./componentes/sidebarleft";
 import { Topbar } from "./componentes/topbar";
 
 
@@ -10,12 +9,12 @@ export default function Home() {
     <section className="border border-red-400 flex flex-col  items-center ">
       <Topbar />
 
-      <SlideProducts />
+
+      <CategBar />
+
+      <main className="bg-orange-300 w-10/12 flex items-center">
 
 
-      <main className="bg-orange-300 w-10/12 flex items-center justify-between">
-
-        <SideCateg />
 
 
         <MenuItems />

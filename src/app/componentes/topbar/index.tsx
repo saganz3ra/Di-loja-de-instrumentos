@@ -1,19 +1,26 @@
 'use client'
 
+import { SearchBar } from "./SearchBar";
+import { CategButton } from "./categButton";
+import { PersonalButton } from "./personalButtons";
+
 export function Topbar() {
     return (
-        <section className="bg-red-300 border border-blue-400 flex w-full h-20 items-center justify-between p-7 ">
-            <ul className="flex  items-center justify-between ">
-                {/* acessibilidade vai ser um botao que emglobará os outros */}
-                <li className="p-7"> <a href="">Home</a></li>
-                <li className="p-7"> <a href="">Acessibilidade</a></li>{/*on click  */}
+        <section className="bg-red-300 border border-blue-400 flex w-full h-20 items-center justify-between p-7">
 
-                <li className="p-7"> <a href="">Fale Conosco</a></li>
+            <div className="flex items-center">
+                <CategButton classname="" />
+                <ul className="hidden md:flex items-center space-x-11">
+                    <li ><a href="">Home</a></li>
+                    <li ><a href="">Tema</a></li>
+                    <li ><a href="">Acessórios</a></li>
+                    <li className="whitespace-nowrap"><a href="">Itens Para Iniciantes</a></li>
+                </ul>
+            </div>
 
-                <li className="p-7"> <a href="">Menu principal</a></li>
+            <SearchBar />
 
-            </ul>
+            <PersonalButton />
         </section>
-
     );
 }
