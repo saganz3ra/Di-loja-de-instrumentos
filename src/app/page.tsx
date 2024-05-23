@@ -1,7 +1,7 @@
-import { MenuItems } from "./componentes/MenuItems";
-import { CategBar } from "./componentes/categBar";
-import { Footerson } from "./componentes/footer";
-import { Topbar } from "./componentes/topbar";
+import { MenuItems } from "./components/MenuItems";
+import { CategBar } from "./components/CategBar";
+import { Footerson } from "./components/Footer";
+import { Topbar } from "./components/Topbar";
 
 
 export default function Home() {
