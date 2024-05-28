@@ -50,21 +50,21 @@ export const SearchBar = () => {
 
     return (
         <section className="flex justify-center h-11 mt-2">
-            <div className="flex items-center border-y-4 border-gray-300 rounded-lg">
+            <div className="flex items-center  rounded-lg">
                 <input
                     type="text"
                     placeholder="Pesquisar..."
-                    className="px-1 w-36 md:w-72 md:px-4 py-2 rounded-l-lg focus:outline-none text-md"
+                    className="px-1 w-36 md:w-72 md:px-4 py-2 rounded-l-lg focus:outline-none text-md text-black"
                     ref={inputRef}
                 />
                 <button
-                    className="text-2xl text-black"
+                    className="text-2xl md:text-3xl text-white md:border-r rounded-lg"
                     onClick={handleMicrophoneClick}
                 >
                     <FaMicrophone />
                 </button>
             </div>
-            <button className="hidden md:block md:px-4 md:py-2 text-white bg-blue-500 rounded-r-lg hover:bg-white hover:text-black focus:outline-none focus:bg-blue-600">
+            <button className="hidden md:block md:px-4 md:py-2 text-white rounded-r-lg hover:bg-white hover:text-black">
                 <Search />
             </button>
         </section>

@@ -12,7 +12,7 @@ import { CircleUserRound, Heart, ShoppingCart } from "lucide-react";
 
 export function PersonalButton() {
     return (
-        <section className="flex space-x-4">
+        <section className=" flex space-x-3">
             <Sheet>
                 <SheetTrigger className="mt-2 text-white rounded-sm h-12  justify-center items-center text-5xl hover:bg-white hover:text-black"><CircleUserRound /></SheetTrigger>
                 <SheetContent className="bg-black">

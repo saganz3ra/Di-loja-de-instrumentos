@@ -34,13 +34,17 @@ export function CategBar() {
     ];
 
     return (
-        <section className="border border-yellow-500 w-full h-20 bg-yellow-500 flex items-start justify-center">
+        <section className=" bg-gradient-to-r from-red-500 to-red-800 w-full h-20  flex items-start justify-center">
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={5}
                 slidesPerView={3}
                 breakpoints={{
                     768: {
+                        slidesPerView: 5
+                    },
+
+                    1024: {
                         slidesPerView: 7,
                     },
                 }}
@@ -52,7 +56,8 @@ export function CategBar() {
                     <SwiperSlide key={index}>
                         <div className="flex flex-col items-center justify-between space-x-7 p-4 text-lg">
                             <Link href={category.href} legacyBehavior>
-                                <a className="flex items-center text-xl text-black hover:underline">
+                                <a className="flex items-center text-xl text-black bg-red-200 bg-opacity-10 p-2 
+                                hover:bg-red-500 hover:text-white rounded-2xl transform transition-transform duration-300 ease-in-out hover:scale-150">
                                     <span className="m-2">{category.icon}</span>
                                     {category.name}
                                 </a>

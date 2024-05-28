@@ -1,6 +1,6 @@
-import { MenuItems } from "./components/MenuItems";
 import { CategBar } from "./components/CategBar";
 import { Footerson } from "./components/Footer";
+import { MenuItems } from "./components/MenuItems";
 import { Topbar } from "./components/Topbar";
 
 
@@ -12,11 +12,7 @@ export default function Home() {
 
       <CategBar />
 
-      <main className="bg-orange-300 w-10/12 flex items-center">
-
-
-
-
+      <main className=" w-10/12 flex items-center">
         <MenuItems />
 
 
