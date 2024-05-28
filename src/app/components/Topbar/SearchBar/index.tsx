@@ -64,7 +64,7 @@ export const SearchBar = () => {
                     <FaMicrophone />
                 </button>
             </div>
-            <button className="hidden md:block md:px-4 md:py-2 text-white rounded-r-lg hover:bg-white hover:text-black">
+            <button className="hidden md:block md:px-4 md:py-2 text-white rounded-r-lg  transform transition-transform duration-300 ease-in-out hover:scale-110">
                 <Search />
             </button>
         </section>

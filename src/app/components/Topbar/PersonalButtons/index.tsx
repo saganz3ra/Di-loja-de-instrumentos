@@ -14,7 +14,7 @@ export function PersonalButton() {
     return (
         <section className=" flex space-x-3">
             <Sheet>
-                <SheetTrigger className="mt-2 text-white rounded-sm h-12  justify-center items-center text-5xl hover:bg-white hover:text-black"><CircleUserRound /></SheetTrigger>
+                <SheetTrigger className="mt-2 text-white rounded-sm h-12  justify-center items-center  transform transition-transform duration-300 ease-in-out hover:scale-110"><CircleUserRound /></SheetTrigger>
                 <SheetContent className="bg-black">
                     <SheetHeader>
                         <SheetTitle className="text-5xl text-white mb-2">Login</SheetTitle>
@@ -53,7 +53,7 @@ export function PersonalButton() {
                 </SheetContent>
             </Sheet>
             <Sheet>
-                <SheetTrigger className="mt-2 text-white rounded-sm h-12 justify-center items-center text-5xl hover:bg-white hover:text-black">
+                <SheetTrigger className="mt-2 text-white rounded-sm h-12 justify-center items-center  transform transition-transform duration-300 ease-in-out hover:scale-110">
                     <ShoppingCart />
                 </SheetTrigger>
                 <SheetContent className="bg-black">
@@ -71,7 +71,7 @@ export function PersonalButton() {
                 </SheetContent>
             </Sheet>
             <Sheet>
-                <SheetTrigger className="mt-2 text-white rounded-sm h-12 justify-center items-center text-5xl hover:bg-white hover:text-black">
+                <SheetTrigger className="mt-2 text-white rounded-sm h-12 justify-center items-center  transform transition-transform duration-300 ease-in-out hover:scale-110">
                     <Heart />
                 </SheetTrigger>
                 <SheetContent className="bg-black">

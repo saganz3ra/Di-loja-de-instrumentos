@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FaSearchMinus, FaSearchPlus } from 'react-icons/fa';
 
-
 interface ITopBar {
     classname: string;
 }
@@ -40,9 +39,9 @@ export const CategButton = ({ classname }: ITopBar) => {
 
     return (
         <section className="h-20 flex items-center w-full justify-between p-2">
-            <div className="max-w-7xl m-auto flex justify-between w-full">
+            <div className="max-w-7xl m-auto flex justify-between w-full relative">
                 {/*burguer button*/}
-                <button className={` lg:hidden ${burguercateg && ""}`}
+                <button className={`lg:hidden ${burguercateg && ""}`}
                     onClick={() => setBurguercateg(!burguercateg)}>
                     <AlignJustify color="#fff" />
                 </button>
@@ -62,18 +61,19 @@ export const CategButton = ({ classname }: ITopBar) => {
                         </li>
                     </ul>
                     {/* clique tema */}
-                    <div className={`${categButton ? "block" : "hidden"} bg-zinc-200 absolute top-25 grid grid-cols-1`}>
+                    <div className={`${categButton ? "block" : "hidden"} bg-zinc-200 absolute top-25 grid grid-cols-1 z-50`}>
                         <ul className="p-4 gap-8 text-xm text-black lg:text-base">
-                            {/* Tema opcoes*/}
+                            {/* Tema opções */}
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <ul className="hidden lg:flex items-center space-x-5">
-                <button className=" hover:bg-black p-3 transform transition-transform duration-300 ease-in-out hover:scale-110">
-                    <Link href="">Home</Link></button>
-                <button className="relative  hover:bg-black p-3 transform transition-transform duration-300 ease-in-out hover:scale-110">
+            <ul className="hidden lg:flex items-center space-x-5 relative z-40">
+                <button className="hover:bg-black p-3 transform transition-transform duration-300 ease-in-out hover:scale-110">
+                    <Link href="">Home</Link>
+                </button>
+                <li className="hover:bg-black p-3 transform transition-transform duration-300 ease-in-out hover:scale-110 relative">
                     <button
                         className="flex items-center"
                         onClick={handleThemeMenuToggle}
@@ -90,18 +90,17 @@ export const CategButton = ({ classname }: ITopBar) => {
                             <li className="p-2 hover:bg-gray-200"><Link href="">Modo Daltonismo</Link></li>
                         </ul>
                     )}
+                </li>
+                <button className="whitespace-nowrap hover:bg-black p-3 transform transition-transform duration-300 ease-in-out hover:scale-110">
+                    <Link href="">Itens Para Iniciantes</Link>
                 </button>
-                <button className="whitespace-nowrap hover:bg-black  p-3 transform transition-transform duration-300 ease-in-out hover:scale-110"><Link href="">Itens Para Iniciantes</Link></button>
                 <li>
                     <div className="flex justify-between space-x-2 text-xl">
                         <button className="transform transition-transform duration-300 ease-in-out hover:scale-150"><FaSearchMinus /></button>
                         <button className="transform transition-transform duration-300 ease-in-out hover:scale-150"><FaSearchPlus /></button>
                     </div>
                 </li>
-
-
-
             </ul>
-        </section >
+        </section>
     );
 };
