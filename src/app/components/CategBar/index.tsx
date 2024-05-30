@@ -55,7 +55,7 @@ export function CategBar() {
                     <SwiperSlide key={index}>
                         <div className="flex flex-col items-center justify-between space-x-7 p-4 text-lg">
                             <Link href={category.href} legacyBehavior>
-                                <a className="flex items-center text-xl text-black bg-red-200 bg-opacity-10 p-2 
+                                <a className="flex items-center text-xl text-black p-2 bg-red-200 bg-opacity-10
                                 hover:bg-red-500 hover:text-white rounded-2xl transform transition-transform duration-300 ease-in-out hover:scale-110">
                                     <span className="m-2">{category.icon}</span>
                                     {category.name}
