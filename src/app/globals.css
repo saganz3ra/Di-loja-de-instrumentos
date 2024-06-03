@@ -33,6 +33,10 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --protanopia-filter: invert(75%) sepia(100%) saturate(200%) hue-rotate(-50deg);
+    --deuteranopia-filter: invert(50%) sepia(100%) saturate(200%) hue-rotate(-50deg);
+    --tritanopia-filter: invert(30%) sepia(100%) saturate(200%) hue-rotate(-50deg);
   }
 
   /* Estilos para a barra de rolagem */
@@ -61,6 +65,8 @@
     scrollbar-color: #888 #f1f1f1;
     /* Firefox */
   }
+
+
 
 
   .dark {
@@ -92,14 +98,20 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  body.protanopia {
+    filter: var(--protanopia-filter);
+  }
+
+  body.deuteranopia {
+    filter: var(--deuteranopia-filter);
+  }
+
+  body.tritanopia {
+    filter: var(--tritanopia-filter);
   }
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { CategButton } from "./CategButton";
+import { CategButton } from './CategButton';
 import { PersonalButton } from "./PersonalButtons";
 import { SearchBar } from "./SearchBar";
 
