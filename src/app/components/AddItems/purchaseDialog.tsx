@@ -18,19 +18,19 @@ const PurchaseDialog = () => {
                         <form className="flex flex-col space-y-3">
                             <label className="flex flex-col">
                                 Nome no Cartão:
-                                <input type="text" className="p-2 rounded-md" />
+                                <input type="text" className="p-2 rounded-md border-2 border-black" />
                             </label>
                             <label className="flex flex-col">
                                 Número do Cartão:
-                                <input type="text" className="p-2 rounded-md" />
+                                <input type="text" className="p-2 rounded-md border-2 border-black" />
                             </label>
                             <label className="flex flex-col">
                                 Data de Validade:
-                                <input type="text" className="p-2 rounded-md" />
+                                <input type="text" className="p-2 rounded-md border-2 border-black" />
                             </label>
                             <label className="flex flex-col">
                                 Código de Segurança (CVV):
-                                <input type="text" className="p-2 rounded-md" />
+                                <input type="text" className="p-2 rounded-md border-2 border-black" />
                             </label>
                         </form>
                     </AlertDialogDescription>

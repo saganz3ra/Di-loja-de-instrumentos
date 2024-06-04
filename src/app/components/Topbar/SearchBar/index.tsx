@@ -58,8 +58,9 @@ export const SearchBar = () => {
                     ref={inputRef}
                 />
                 <button
-                    className="text-2xl md:text-3xl text-white md:border-r rounded-lg"
+                    className="text-2xl md:text-3xl text-white rounded-lg"
                     onClick={handleMicrophoneClick}
+                    style={{ marginLeft: '10px' }}
                 >
                     <FaMicrophone />
                 </button>

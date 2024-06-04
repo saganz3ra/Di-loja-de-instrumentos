@@ -4,44 +4,93 @@ import { AddItem } from "../AddItems";
 
 export function MenuItems() {
     return (
-        <section className="w-full flex flex-col items-center">
+        <section className="w-full flex flex-col items-center resize: both;">
             <AddItem
-                image="/instrumentos/violao/violaoPreto.jpg"
-                title="Violao"
-                category="Guitarra"
-                text="Violão Harmonics GC-C10BK Acústico Clássico Nylon, possui Braço em Nato, Escala e Tampo em Linden, Trastes de 52mm em Cobre e Acabamento em Verniz Brilhante. Um instrumento perfeito para músicos iniciantes e até mais experientes que não abrem mão do som tradicional de um violão de qualidade. Apresenta um acabamento sofisticado considerado acima da média se comparado a violões similares, sendo assim, uma ótima opção de custo-benefício. As escalas ergonomicamente dimensionadas, trastes polidos de baixa espessura e o encordoamento em nylon facilitando o posicionamento das notas, com maciez para os dedos e melhorando a tocabilidade do usuário. O corpo pintado de maneira artesanal apresenta um acabamento brilhante que além de aumentar a durabilidade do produto, realça e valoriza ainda mais a cor e estética do instrumento. Por serem violões com cordas de nylon que proporcionam um timbre aveludado, são indicados para MPB, samba e melodias mais suaves ou mesmo ritmos que necessitem de dedilhados. Garanta já o seu!"
-                preco="5999,99"
+                image="/Michael.png"
+                title="Michael - Antares VM19E"
+                category="Violão"
+                text="Modelo: Violão Adulto 
+                - Tampo: Spruce 
+                - Braço em Basswood, 
+                - Escala e Cavalete em Dark Maple 
+                - Filete ABS no corpo e na escala 
+                - Marcadores de escala Dot na Lateral 
+                - Tensor Dual Action 
+                - Tarraxas: Cromadas c/ borboletas madrepérola 
+                - Encordoamento: Nylon (tensão normal) 
+                - Tamanho: 4/4(39”) / 99cm 
+                - Acompanha Capa exclusiva Michael 
+                - Cor: Satin"
+                preco="1100,00"
                 sound="/instrumentos/guitarra/sound/riffguita1.mp3"
-                videoDemo="https://www.youtube.com/watch?v=IAEuKZ_mMCw"
+                videoDemo="https://www.youtube.com/embed/ei97qjKLP9o?si=zL0mpe0RcezfKvTp"
             />
             <AddItem
-                image="/GuitarraPreta.jpg"
-                title="Guitarra com corpo em basswood"
-                category="Guitarra"
-                text="Guitarra com corpo em basswood, braço e escala em maple, ponte standard tremolo e captadores single-coil.
-                O clássico som stratocaster agora ao seu alcance.
-                A guitarra SX SST conta com 21 trastes, corpo em basswood, braço em maple, escala em maple, 3 singles, tremolo standard, 2 controles de tonalidade, 1 volume, chave de 5 posições, marcação dot, ferragens cromadas, acompanha Gig Bag de nylon e chave para regulagem do tensor/ponte."
-                preco="1539,99"
+                image="/Telecaster2.png" 
+                title="Telecaster - SX STL50+" 
+                category="Guitarra" 
+                text="Modelo: SX STL50+  
+                - Série Vintage  
+                - Cordas: Daddario USA 
+                - Braço: Maple Canadense selecionado 
+                - Tensor: 2 vias 
+                - Escala: Maple 
+                - Corpo: Basswood 
+                - Trastes de níquel: 21 
+                - Tarraxas: Estilo vintage niqueladas 
+                - Ferragens: Cromadas 
+                - Ponte: Ponte estilo vintage cromada 
+                - Controles: 1 vol, 1 tone, chave 3 posições 
+                - Escala: 648 mm (25.5 pol) 
+                - Largura do nut: 42 mm (1.65 pol) 
+                - Escudo: Branco de 1 camada 
+                - Marcação: Dot (Bolinha) 
+                - Captadores single coil 
+                - Acessórios: Gig Bag de nylon EB400, Chave para regulagem do tensor/ponte"
+                preco="2600,00"
                 sound="/instrumentos/guitarra/sound/riffguita1.mp3"
                 videoDemo="https://www.youtube.com/embed/WwmAB8Wx6DY"
             />
             <AddItem
-                image="/saxofone.jpg"
-                title="Saxofone ST 503"
-                category="Saxofone"
-                text="O ST 503 é um dos saxofones mais tradicionais da linha de metais da Eagle. Destaca-se pela qualidade de sua construção e pelos materiais que o compõem. As chaves ergonômicas, ajustadas manualmente, proporcionam maior conforto, respostas rápidas e afinação precisa. Este modelo apresenta um visual impressionante e uma sonoridade excepcional."
-                preco="1339,99"
+                image="/LesPaul.png"
+                title="Les Paul - Zakk Wylde"
+                category="Guitarra"
+                text="-MARCA: Epiphone 
+                - MODELO: Les Paul Custom 
+                - SÉRIE: Zakk Wylde Signature 
+                - ANO: 2008 
+                - COR: Bullseye 
+                - CORPO: Mogno 
+                - BRAÇO: Hard Maple 
+                - ESCALA: Rosewood 
+                - MARCAÇÃO: Block 
+                - TRASTES: 22 Medio Jumbo 
+                - TARRAXAS: Grover 
+                - FERRAGEM: Dourada 
+                - PONTE: Tune o Matic 
+                - CAPTAÇÃO: EMG HZ PASSIVA 
+                - CONTROLES: 2 Vol, 2 Tone 
+                - CHAVE: 3 Posições"
+                preco="8500,00"
                 sound="/instrumentos/guitarra/sound/riffguita1.mp3"
-                videoDemo="https://www.youtube.com/watch?v=zSkbT20OHtA"
+                videoDemo="https://www.youtube.com/embed/G3AsDzOYzRY?si=uiXAT9DeC1JcflFP"
             />
             <AddItem
-                image="/violacaipira.jpg"
-                title="Violao Caipira Giannini Elétrica VS14"
-                category="GuitVarra"
-                text="Viola Caipira Giannini Elétrica VS14, ideal para quem está começando a aprender. Possui sonoridade boa com todos os requisitos iniciais da marca Giannini. Esse modelo conta com um afinador digital embutido e pré-amplificador de 3 bandas"
-                preco="3339,99"
+                image="/BateriaTama.png"
+                title="Tama - Starclassic Walnut Birch Surf Green"
+                category="Bateria"
+                text="Marca: Tama 
+                - Cor: Walnut Birch Surf Green 
+                - Toms: 8x6, 10x7 e 12x8 flutuantes 
+                - Surdos: 14x12 e 16x14 de chão 
+                - Bumbo: 22x16 
+                - Caixa: 14x7' 
+                - Hi Hat Zildjian: 14' 
+                - Crash Zildjian: 18' 
+                - Hi Hat Zildjian: 21'"
+                preco="9850,00"
                 sound="/instrumentos/guitarra/sound/riffguita1.mp3"
-                videoDemo="https://www.youtube.com/watch?v=G3AsDzOYzRY"
+                videoDemo="https://www.youtube.com/embed/FViqgvpCEVQ?si=zohgjh7UPbTtqwV2"
             />
         </section>
     );

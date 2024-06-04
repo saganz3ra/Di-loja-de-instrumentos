@@ -6,7 +6,7 @@ import { Topbar } from "./components/Topbar";
 
 export default function Home() {
   return (
-    <section className="border border-red-400 flex flex-col  items-center ">
+    <section className="border border-none flex flex-col  items-center ">
       <Topbar />
 
 
