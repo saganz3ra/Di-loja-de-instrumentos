@@ -34,7 +34,7 @@ export function CategBar() {
     ];
 
     return (
-        <section className="bg-gradient-to-r from-red-500 to-red-800 w-full h-20 flex items-start justify-center">
+        <section className="bg-gradient-to-r from-emerald-800  to-emerald-900 w-full h-20 flex items-start justify-center">
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={5}

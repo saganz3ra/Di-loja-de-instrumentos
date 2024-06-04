@@ -99,21 +99,21 @@ export const AddItem = ({ image, title, text, category, sound, preco, videoDemo 
 
     return (
         <section className="flex flex-col mb-1 mt-3">
-            <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 bg-gradient-to-r from-red-500 to-red-800">
-                <div className="md:col-span-1 flex justify-center items-center border-x border-red-950">
+            <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 bg-gradient-to-r ">
+                <div className="md:col-span-1 flex justify-center items-center border-x border-teal-950">
                     <Image src={image} width={500} height={500} alt="" className="bg-contain md:w-full md:h-96 rounded-md" />
                 </div>
-                <div className="text-black p-5 bg-gradient-to-b from-red-200 to-red-400 border-x border-red-950">
+                <div className="text-black p-5 0 border-x border-emerald-800">
                     <p className="font-bold text-3xl text-start mb-3 overflow-hidden text-ellipsis"
                         style={{ display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: 1 }}>{title}</p>
-                    <p className="p-1 bg-red-500 bg-opacity-20 border-x border-red-500 rounded-sm overflow-hidden text-ellipsis mb-3" style={{ display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: 3 }}>
+                    <p className="p-1 bg-red-500 bg-opacity-20 border-x border-teal-950 rounded-sm overflow-hidden text-ellipsis mb-3" style={{ display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: 3 }}>
                         {text}
                     </p>
                     <div className="flex justify-start">
                         <p className="text-3xl font-bold">R$ {preco}</p>
                         <PurchaseDialog />
                     </div>
-                    <p className="text-sm mb-3 border-b border-red-500 pb-1">Até 10x sem juros</p>
+                    <p className="text-sm mb-3 border-b border-teal-950 pb-1">Até 10x sem juros</p>
                     <div>
                         <div className="flex justify-start gap-2 w-full h-10">
                             <AlertDialog>
@@ -173,7 +173,7 @@ export const AddItem = ({ image, title, text, category, sound, preco, videoDemo 
                             <li><a href="">{category}</a></li>
                         </ul>
                     </div>
-                    <div className="bg-red-500 bg-opacity-3 hover:bg-red-500 hover:text-white rounded-md border-y border-red-900 flex justify-center gap-7 text-white text-sm">
+                    <div className=" bg-opacity-3 hover:bg-teal-950 hover:text-white rounded-md border-y border-white flex justify-center gap-7 text-white text-sm">
                         <button className="transform transition-transform duration-300 ease-in-out hover:scale-110">
                             <Heart />
                         </button>
