@@ -140,7 +140,7 @@ export const CategButton = ({ classname }: ITopBar) => {
                     <Link href="">Modo de alto contraste</Link>
                 </button>
                 <li>
-                    <div className="flex justify-between space-x-2 text-xl">
+                    <div className="flex justify-between space-x-2 text-xl text-white">
                         <button
                             className="transform transition-transform duration-300 ease-in-out hover:scale-150"
                             onClick={() => handleZoom('out')}

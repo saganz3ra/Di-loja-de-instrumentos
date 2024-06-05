@@ -8,8 +8,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TopzeraInstrumentosShop",
-  description: "Uma Loja de instrumentos musicais",
+  title: "JNRC- Instrumentos",
+  description: "Uma Loja de instrumentos musicais de alta qualidade",
 };
 
 export default function RootLayout({

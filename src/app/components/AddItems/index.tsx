@@ -3,6 +3,7 @@ import { AlertDialogDescription, AlertDialogTitle } from "@radix-ui/react-alert-
 import { CircleX, Heart, MessageCircle, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { useCart } from "./cartContext";
+import { useState } from "react";
 
 export interface IaddItem {
     image: string;
@@ -22,7 +23,7 @@ export const PurchaseDialog = () => {
                     Comprar
                 </AlertDialogTrigger>
                 <div className="alertDialogOverlay">
-                    <AlertDialogContent className="alertDialogContent">
+                    <AlertDialogContent className="alertDialogContent bg-white">
                         <AlertDialogCancel className="absolute top-2 right-2 rounded-full">
                             <CircleX />
                         </AlertDialogCancel>
@@ -95,6 +96,13 @@ export const AddItem = ({ image, title, text, category, sound, preco, videoDemo 
         addToCart(item);
     };
 
+    const [liked, setLiked] = useState(false);
+
+    const toggleLike = () => {
+        setLiked(!liked);
+
+    }
+
     return (
         <section className="flex flex-col mb-1 mt-3">
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 bg-gradient-to-r ">
@@ -137,7 +145,9 @@ export const AddItem = ({ image, title, text, category, sound, preco, videoDemo 
                                             <AlertDialogFooter className="mt-2 mb-2">
                                                 <div className="flex w-full justify-between">
                                                     <div className="grid grid-cols-4 mt-4 md:mt-1 gap-2">
-                                                        <button><Heart /></button>
+                                                        <button onClick={toggleLike}>
+                                                            <Heart className={liked ? 'text-red-500' : ''} />
+                                                        </button>
                                                         <button onClick={handleAddToCart}><ShoppingCart /></button>
                                                         <button><MessageCircle /></button>
                                                     </div>
@@ -154,7 +164,9 @@ export const AddItem = ({ image, title, text, category, sound, preco, videoDemo 
                                         </div>
                                         <div className="flex w-full justify-between">
                                             <div className="grid grid-cols-4 mt-4 md:mt-1 gap-2">
-                                                <button><Heart /></button>
+                                                <button onClick={toggleLike}>
+                                                    <Heart className={liked ? 'text-red-500' : ''} />
+                                                </button>
                                                 <button onClick={handleAddToCart}><ShoppingCart /></button>
                                                 <button><MessageCircle /></button>
                                             </div>
@@ -170,8 +182,8 @@ export const AddItem = ({ image, title, text, category, sound, preco, videoDemo 
                         </ul>
                     </div>
                     <div className="bg-opacity-3 opacity-70 hover:opacity-100 bg-teal-950 dark:bg-teal-700 rounded-sm p-1 mb-3 w-70 flex justify-center gap-7 text-white text-sm">
-                        <button className="transform transition-transform duration-300 ease-in-out hover:scale-110">
-                            <Heart />
+                        <button onClick={toggleLike}>
+                            <Heart className={liked ? 'text-red-600' : ''} />
                         </button>
                         <button className="transform transition-transform duration-300 ease-in-out hover:scale-110" onClick={handleAddToCart}>
                             <ShoppingCart />

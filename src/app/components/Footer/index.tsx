@@ -13,7 +13,7 @@ export function Footerson() {
                 </div>
 
                 <div className="text-sm">
-                    <p>Email: TopZeraInstrumentos@gmail.com</p>
+                    <p>Email: JNRCinstrumentoss@gmail.com</p>
                     <p>Telefone: (42) 99827-5678</p>
                 </div>
 
@@ -31,7 +31,7 @@ export function Footerson() {
             </div>
 
             <div className="mt-4 text-sm">
-                <p>&copy; {new Date().getFullYear()} TopZeraInstrumentos. Todos os direitos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} JNRC - Instrumentos. Todos os direitos reservados.</p>
             </div>
         </footer>
     );

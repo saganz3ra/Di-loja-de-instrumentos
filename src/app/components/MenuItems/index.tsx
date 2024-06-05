@@ -55,7 +55,7 @@ export function MenuItems() {
                 image="/LesPaul.png"
                 title="Les Paul - Zakk Wylde"
                 category="Guitarra"
-                text="-MARCA: Epiphone 
+                text="MARCA: Epiphone 
                 - MODELO: Les Paul Custom 
                 - SÉRIE: Zakk Wylde Signature 
                 - ANO: 2008 
